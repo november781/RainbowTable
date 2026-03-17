@@ -3,6 +3,7 @@ import pickle
 RAINBOWTABLE = dict()
 
 def main():
+    print("Setting up password hash table...")
     try:
         with open("passwordDict.pkl","rb") as file:
             RAINBOWTABLE = pickle.load(file)
