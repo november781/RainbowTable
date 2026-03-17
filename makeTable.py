@@ -1,5 +1,6 @@
 import hashlib
 import pickle
+import hashcompare
 
 def main():
     passdict = dict()
@@ -24,7 +25,11 @@ def main():
     with open("passwordDict.pkl","wb") as file:
         pickle.dump(passdict, file)
     print("Password hash table written to file 'passwordDict.pkl'.\n"
-          "You may now run 'hashcompare.py' with a target hash")
+          "Now running 'hashcompare.py'...........................\n"
+          ".......................................................")
+
+    hashcompare.main()
+
 
 if __name__ == "__main__":
     main()
