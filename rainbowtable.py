@@ -54,6 +54,7 @@ def check_password(passwords:dict):
             break
 
 def main():
+    passwords= dict()
     salt = input("Enter the salt used to encode these passwords (press enter if no salt was used): ").strip()
     if salt == '':
         salt = None
